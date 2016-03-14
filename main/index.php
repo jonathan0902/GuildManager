@@ -157,7 +157,11 @@
 					<input type='submit' name='logout' value='Log Out' />
 
 				</form>
+
+
 <?php
+	
+	echo "<a href='../devLogin/".$user_name.".php' style='float: right;'>".$user_name."</a>";
 
 		if($welcomecounter == 1) {
 ?>

@@ -94,6 +94,17 @@ $dbname = "guildmanager";
      
           
               $retval = mysql_query($sqlpoints);
+
+
+             $profile = fopen("$uname.php", "w");
+
+             $profilewrite = "Okej this is a test to the creation of how to make an profile for ever user! :=)";
+
+             fwrite($profile, $profilewrite);
+
+             fclose($profile);
+
+
             
              
             }else{
