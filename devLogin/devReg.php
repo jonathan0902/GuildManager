@@ -98,7 +98,7 @@ $dbname = "guildmanager";
 
              $profile = fopen("$uname.php", "w");
 
-             $profilewrite = "Okej this is a test to the creation of how to make an profile for ever user! :=)";
+             $profilewrite = "<?php $profileuser = 1; ?>" ;
 
              fwrite($profile, $profilewrite);
 

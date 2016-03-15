@@ -30,7 +30,7 @@
 
 		<html>
 		<head>
-				<link href='https://fonts.googleapis.com/css?family=Oldenburg' rel='stylesheet' type='text/css'>
+				<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 					<link rel="stylesheet" type="text/css" href="main.css" />
 
 					<script type="text/javascript">
@@ -153,7 +153,7 @@
 ?>
 
 							<form style="float: right;" method="POST">
-
+							
 					<input type='submit' name='logout' value='Log Out' />
 
 				</form>
@@ -161,7 +161,7 @@
 
 <?php
 	
-	echo "<a href='../devLogin/".$user_name.".php' style='float: right;'>".$user_name."</a>";
+	echo "<div class='profile'><a href='../devLogin/".$user_name.".php' style='float: right;'>".$user_name."</a></div>";
 
 		if($welcomecounter == 1) {
 ?>
