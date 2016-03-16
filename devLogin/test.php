@@ -1,1 +1,0 @@
-<?php $user = $user_name; echo $user?>

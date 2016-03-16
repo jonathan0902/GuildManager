@@ -111,9 +111,10 @@ $dbname = "guildmanager";
              <body>
              <?php
               require("../main/menu.php"); 
-              $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+              $actual_link = "$_SERVER[REQUEST_URI]";
+              echo substr($actual_link,12);
+              
               echo $actual_link;
-              echo $user_name; 
               ?></body></html>
               ';
 
