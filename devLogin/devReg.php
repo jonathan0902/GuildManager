@@ -1,10 +1,12 @@
 <html>
 <head>
-   <link rel="stylesheet" type="text/css" href="regerstering.css" />
+
+  <link rel="stylesheet" type="text/css" href="../main/main.css" />
+
 </head>
 <body style="margin: 0; padding: 0;">
    <?php
-
+  require("../main/menu.php");
 
 $servername = "localhost";
 $username = "root";
@@ -15,7 +17,7 @@ $dbname = "guildmanager";
   $db = mysql_connect("$servername","$username","$password");
   mysql_select_db("$dbname");
 
-   if(isset($_POST['submit'])) {
+   if(isset($_POST['reg'])) {
    
    $uname = mysql_escape_string($_POST['uname']);
    $namn = mysql_escape_string($_POST['name']);
@@ -98,7 +100,22 @@ $dbname = "guildmanager";
 
              $profile = fopen("$uname.php", "w");
 
-             $profilewrite = "<?php $profileuser = 1; ?>" ;
+             echo '$name="kalle"';
+
+
+             $profilewrite = '
+             <html>
+             <head>
+              <link rel="stylesheet" type="text/css" href="../main/main.css" />
+             </head>
+             <body>
+             <?php
+              require("../main/menu.php"); 
+              $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+              echo $actual_link;
+              echo $user_name; 
+              ?></body></html>
+              ';
 
              fwrite($profile, $profilewrite);
 
@@ -147,7 +164,7 @@ $dbname = "guildmanager";
    
    <p> Confrim Email:</p><input type="email"  name="email2" /><br /><br />
    
-            <input type="submit" name="submit" value="Join" />
+            <input type="submit" name="reg" value="Join" />
      </form>
      </div>
 EOT;

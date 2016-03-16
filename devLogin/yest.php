@@ -1,0 +1,1 @@
+<?php require("../main/menu.php"); echo $user_name; ?>
