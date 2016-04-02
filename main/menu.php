@@ -207,5 +207,9 @@
 		</div>
 		<div class="blockhead">
 		</div>
+		<a href="../main/index.php">Home</a>
+		<a href="../main/index.php">Forum</a>
+		<a href="../main/index.php">About us</a>
+		<a href="../main/index.php">Contact</a>
 				</body>
 		</html>
