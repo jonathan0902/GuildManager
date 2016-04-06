@@ -27,8 +27,7 @@
 
 					$retval = mysql_query($sql);
 
-					break;
-
+					header("Refresh:0");
 		}
 		?>
 		<html>
@@ -84,7 +83,7 @@
 <?php         
 		 		}
 
-		 		$result = mysql_query("SELECT atomtext, username, dateon, timeon FROM atomize");
+		 		$result = mysql_query("SELECT atomtext, username, dateon, timeon FROM atomize ORDER BY id DESC");
 		 
 		 			while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
 
